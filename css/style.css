@@ -1,9 +1,9 @@
 body {
   background-image: url("../img/earth.jpg");
   height: 100vh; /* You must set a specified height */
+  width: 100vw;
   min-height: 720px;
-  min-width: calc(100vw * 4 / 3);
-  /* background-position: center; /* Center the image */
+  min-width: calc(100vh * 4 / 3);
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
