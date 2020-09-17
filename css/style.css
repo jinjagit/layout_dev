@@ -9,7 +9,7 @@ body {
   width: var(--width-by-ratio);
   min-height: 720px;
   min-width: calc(100vh * 4 / 3);
-  background-color: rgb(255, 238, 0);
+  background-color: black;
   margin: 0;
   overflow: hidden; /* hide scrollbars */
 }
@@ -20,10 +20,10 @@ body {
   background-position: 50% 50%;
   position: absolute;
   left: var(--offset);
-  opacity: 1.0;
+  opacity: 0.8;
   height: 100%;
   width: var(--width-by-ratio);
-  background-color: crimson;
+  background-color: black;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
@@ -33,7 +33,7 @@ body {
   height: 100vh;
   width: var(--sidebar-width);
   z-index: 1;
-  background-color: blue;
+  background-color: rgb(25, 25, 58);
 }
 
 #left-sidebar {
