@@ -29,7 +29,7 @@ body::-webkit-scrollbar {
 
 #canvas {
   height: 100vh; /* You must set a specified height */
-  width: var(--width-by-ratio);
+
   min-height: 720px;
   min-width: 1024px;
   margin: 0;
