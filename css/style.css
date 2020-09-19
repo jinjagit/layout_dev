@@ -46,7 +46,7 @@ body::-webkit-scrollbar {
 .sidebar {
   position: relative;
   height: var(--height);
-  width: 15%;
+  width: calc(var(--height) * 0.25);
   z-index: 1;
   background-color: rgb(25, 25, 58);
 }
