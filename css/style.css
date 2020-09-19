@@ -1,17 +1,15 @@
 :root {
-  --sidebar-width: calc(100vh * 1 / 4);
-  --width-by-ratio: calc(100vh * 16 / 9);
-  --offset: calc((100% - var(--width-by-ratio)) / 2);
-  --main-margin: max(0px, ((100vw - var(--width-by-ratio)) / 2));
+  --width: max(1024px, 100vw);
+  --height: max(720px, 100vh);
+  --img-size: calc(var(--height) * 0.6);
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  min-height: 720px;
-  min-width: 1024px;
+  width: var(--width);
+  height: var(--height);
   background-color: black;
-  font-family: 'Ubuntu Mono', monospace;
+  /* font-family: 'Ubuntu Mono', monospace; */
+  font-family: 'Oxanium', cursive;
   color: white;
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;  /* IE and Edge */
@@ -28,22 +26,27 @@ body::-webkit-scrollbar {
 }
 
 #canvas {
-  height: 100vh; /* You must set a specified height */
-
-  min-height: 720px;
-  min-width: 1024px;
+  width: var(--width);
+  height: var(--height);
   margin: 0;
-  margin-left: var(--main-margin);
-  background-color: chartreuse;
-  background-image: url(../img/earth.jpg);
+  background-color: black;
+}
+
+#image {
+  position: fixed;
+  height: var(--img-size);
+  width: var(--img-size);
+  margin-left: calc((var(--width) - var(--img-size)) / 2);
+  margin-top: calc((var(--height) - var(--img-size)) / 2);
+  background-image: url(../img/planet.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .sidebar {
   position: relative;
-  height: 100%;
-  width: var(--sidebar-width);
+  height: var(--height);
+  width: 15%;
   z-index: 1;
   background-color: rgb(25, 25, 58);
 }

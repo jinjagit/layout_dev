@@ -14,25 +14,13 @@ function main() {
     win_heightText.innerHTML = `height: ${y}`;
   }
 
-  function setWidths() {
-    let aspect = screen.width / screen.height;
-
-    let winH = window.innerHeight;
-    let widthByRatio = winH * aspect;
-
-    let canvas = document.getElementById("canvas");
-    canvas.style.width = `${widthByRatio}px`;
-  }
-
   function resize() {
-    setWidths();
     dimensions();
   }
 
-  window.onresize = function(){resize()};
+  window.onresize = function(){ resize() };
 
   resize();
-
 }
 
 main();

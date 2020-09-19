@@ -5,20 +5,22 @@
     <link rel="icon" href="data:;base64,iVBORwOKGO=" /> <!--set favicon to nothing, to prevent console error-->
     <title>layout dev</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css" media="screen" />
     <link rel="stylesheet" href="./css/style.css" media="screen" />
   </head>
   <body>
     <div id="canvas">
       <div id="left-sidebar" class="sidebar">
-        <p class="dimensions">screen:</p>
+        <p class="dimensions">Screen:</p>
         <p id="width" class="dimensions"></p>
         <p id="height" class="dimensions"></p>
         <br>
-        <p class="dimensions">window:</p>
+        <p class="dimensions">Window:</p>
         <p id="win-width" class="dimensions"></p>
         <p id="win-height" class="dimensions"></p>
       </div>
+      <div id="image"></div>
       <div id="right-sidebar" class="sidebar"></div>
     </div>
     <script src="main.js"></script>
